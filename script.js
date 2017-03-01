@@ -1,9 +1,18 @@
+var password;
+password="1234";
+
 $(document).ready(function() {
-    // #login-box password field
-    $('#pass').attr('type', 'text');
-    $('#pass').val('Password');
+    
     $('button').click (function() {
-        if  (val password='123456'){
-        $("results").append("1234")});
+        var guess;
+        guess=$("#pass").val();
+        
+        if (guess===password) {
+            $("#results").append("CORRECT");
+        } else if (guess>password) {
+            
+            $("#results").append("GREEDY GREEDY GREDY")
+        }
+    });
         
 });
